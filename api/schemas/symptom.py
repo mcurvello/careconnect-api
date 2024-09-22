@@ -23,9 +23,10 @@ def show_symptoms(symptoms: List[Symptom]):
 
   for symptom in symptoms:
     result.append({
-      "name": symptom.name,
-      "severity": symptom.severity.value,
-      "type": symptom.symptom_type.value,
+      "id": symptom.id,
+      "name": symptom.name.upper(),
+      "severity": symptom.severity.value.upper(),
+      "type": symptom.symptom_type.value.upper(),
       "date": symptom.created_at.strftime("%d/%m/%Y"),
       "time": symptom.created_at.strftime("%H:%M"),
     })
@@ -49,9 +50,11 @@ def show_symptom(symptom: Symptom):
     "id": symptom.id,
     "name": symptom.name,
     "severity": symptom.severity.value,
+    "date": symptom.created_at.strftime("%d/%m/%Y"),
+    "time": symptom.created_at.strftime("%H:%M"),
     "type": symptom.symptom_type.value,
     "total_details": len(symptom.details),
-    "details": [{"text": c.text} for c in symptom.details]
+    "details": [{"text": c.text.capitalize()} for c in symptom.details]
   }
 
 class SymptomPatchSchema(BaseModel):
