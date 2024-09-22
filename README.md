@@ -17,7 +17,7 @@ Certifique-se de ter o Python 3.7 ou superior instalado em seu ambiente.
    - Clone o repositório forkado para seu ambiente local:
      ```bash
      git clone https://github.com/SEU_USUARIO/mvp1-backend.git
-     cd mvp1-backend
+     cd mvp1-backend/api
      ```
 
 3. **Criar um Ambiente Virtual**
