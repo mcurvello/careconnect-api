@@ -9,7 +9,7 @@ from sqlalchemy.exc import IntegrityError
 from model import Session, Symptom, Detail
 from schemas import *
 
-info = Info(title="Symptom's API", version="1.0.0")
+info = Info(title="CareConnect API", version="1.0.0")
 app = OpenAPI(__name__, info=info)
 CORS(app)
 
