@@ -1,4 +1,4 @@
-# Symptom's API
+# CareConnect API
 
 ## Descrição
 Este projeto é uma API para gerenciamento de sintomas, permitindo adicionar, visualizar, atualizar e remover sintomas e seus detalhes. A API é construída com Flask e utiliza SQLAlchemy para interagir com o banco de dados.
